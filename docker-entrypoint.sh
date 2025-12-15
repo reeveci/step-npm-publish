@@ -36,4 +36,4 @@ fi
 unset NPM_LOGIN_REGISTRY NPM_LOGIN_REGISTRY_NAME NPM_LOGIN_TOKEN NPM_LOGIN_USER NPM_LOGIN_PASSWORD
 
 npm ci
-npm publish
+npm publish $([[ -n "$TAG" ]] && printf "%s" "--tag $TAG" ||:)

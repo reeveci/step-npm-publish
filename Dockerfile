@@ -14,5 +14,7 @@ ENV NPM_LOGIN_USER=
 ENV NPM_LOGIN_PASSWORD=
 # CONTEXT: Context directory (relative to project root)
 ENV CONTEXT=.
+# TAG: Tag to publish
+ENV TAG=
 
 ENTRYPOINT ["docker-entrypoint.sh"]
